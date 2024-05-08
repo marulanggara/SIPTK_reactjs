@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+/* Aturan CSS yang tetap sama untuk semua lebar layar */
+.admin-dashboard-header {
+    font-weight: bold;
+    font-family: 'Inknut Antiqua', serif;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-shadow: 2px 1px 0px #b6b0b0, 3px 3px 0px rgba(255, 255, 255, 0.1);
+}
+
+.siptk-header {
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    margin-top: 100px;
+    text-shadow: 1px 1px 0px #b6b0b0, 1px 1px 0px rgba(255, 255, 255, 0.1);
+}
+
+/* Aturan CSS yang berubah berdasarkan lebar layar */
+@media (max-width: 768px) {
+    .admin-dashboard-header {
+        /* Aturan CSS yang berbeda untuk lebar layar kurang dari atau sama dengan 768px */
+        font-size: 18px;
+        /* Mengurangi ukuran font */
+    }
+
+    .siptk-header {
+        /* Aturan CSS yang berbeda untuk lebar layar kurang dari atau sama dengan 768px */
+        margin-top: 50px;
+        /* Mengurangi margin atas */
+    }
+}
+
+/* Aturan CSS yang tetap sama untuk semua lebar layar */
+.siptk-line {
+    border-color: black;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.pengumuman-icon {
+    float: right;
+    margin-top: 5px;
+    color: black;
+}
+
+.announcement-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; /* Adjust margin as needed */
+}
+
+.announcement-box1 {
+    width: 60%;
+    background-color: #F9F9F9; 
+    border-color: black;
+    border-style: solid;
+    border-width: 2px; /* Menebalkan border */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Menambahkan shadow */
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.academic-status-box1 {
+    width: 36%;
+    background-color: #F9F9F9;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px; /* Menebalkan border */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Menambahkan shadow */
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.announcement-box1 h2,
+.academic-status-box1 h2 {
+    margin-top: 0;
+}
+
+.academic-status-box1 hr {
+    border-top: 2px solid #2d2d2d; /* Garis horizontal dengan ketebalan 2px */
+}
+
+.card-body-scrollable {
+    max-height: 200px; /* Sesuaikan tinggi maksimum sesuai kebutuhan */
+    overflow-y: auto; /* Menambahkan scrollbar jika konten melebihi tinggi maksimum */
+    scrollbar-width: thin; /* Lebar scrollbar */
+    scrollbar-color: #ccc transparent; /* Warna scrollbar */
+}
+
+.custom-card {
+    border-color: rgb(134, 134, 134);
+    border-width: 2px;
+    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);  
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Gambar di sebelah kiri, teks di sebelah kanan */
+    align-items: center; /* Posisikan vertikal ke tengah */
+}
+
+.image-container, .card-container {
+    flex: 1; /* Membagi ruang secara merata */
+    display: flex;
+    align-items: center; /* Menyusun elemen ke tengah secara vertikal */
+}
+
+.stack-item {
+    border: 1px solid #ccc; /* Ubah warna, lebar, dan gaya border sesuai kebutuhan Anda */
+    padding: 10px; /* Sesuaikan padding sesuai kebutuhan Anda */
+}
+
+.p-2{
+    justify-content: space-between;
+}
+
+.status-col {
+    border-right: 2px solid #ced4da; /* Warna dan gaya garis vertikal */
+    padding-right: 10px; /* Ruang di antara teks dan garis vertikal */
+}
+
+.header-card{
+    text-align: left;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;; 
+    width: 100%; 
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 1px 0px #b6b0b0, 3px 3px 0px rgba(255, 255, 255, 0.1);
+}

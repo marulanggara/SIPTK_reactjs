@@ -1,0 +1,26 @@
+.perwalian-container{
+    margin-top: 10px;
+}
+
+.perwalian-table {
+    display: table;
+    width: 100%;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.perwalian-row {
+    display: table-row;
+}
+
+.perwalian-cell {
+    display: table-cell;
+
+    padding: 10px;
+    border: 1px solid #ccc;
+    vertical-align: middle;
+    overflow-wrap: break-word;;
+}
+
+.perwalian-cell p {
+    margin: 0;
+}

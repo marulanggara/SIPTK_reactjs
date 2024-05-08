@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@400;700&display=swap');
+
+.pengumuman-dashboard-header {
+    font-weight: bold;
+    font-family: 'Inknut Antiqua', serif; 
+    text-align: left; 
+    width: 100%;  
+    margin-bottom: 20px;
+    text-shadow: 2px 1px 0px #b6b0b0, 3px 3px 0px rgba(255, 255, 255, 0.1);
+}
+
+.pgmn-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pgmn-box {
+    width: 60%;
+    background-color: #F9F9F9; 
+    border-color: black;
+    border-style: solid;
+    border-width: 2px; /* Menebalkan border */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Menambahkan shadow */
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.profile-container{
+    display: flex;
+    justify-content: space-between; /* Memisahkan elemen sejauh mungkin */
+    align-items: baseline;
+}
+
+
+.mhs-tanggal{
+    margin-left: auto; /* Menggerakkan ke kanan sejauh mungkin */
+}
+
+.pgmn-content{
+    text-align: justify;
+    padding-left: 17px;
+    padding-right: 15px;
+}

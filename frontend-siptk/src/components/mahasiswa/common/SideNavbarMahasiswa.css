@@ -1,0 +1,116 @@
+/* Aturan CSS untuk sidebar */
+.SideNavbar-custom1 {
+    top: 50px;
+    bottom: 42px;
+    z-index: 1000;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    background: #66667A;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.sidebar-link1 {
+    color: rgb(255, 255, 255);
+    font-family: 'Inria Sans', sans-serif;
+    font-weight: bold;
+    text-align: left;
+    text-shadow: 1px 1px 0px #666666, 3px 3px 0px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-link1:hover {
+    color: rgb(146, 146, 146);
+}
+
+.text-center {
+    padding: 16px 16px 16px 16px;
+}
+
+.custom1-button {
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 10px;
+    width: 100%;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.custom1-logout-text {
+    color: rgb(252, 252, 252);
+    font-weight: bold;
+    font-family: 'Inria Sans', sans-serif;
+    text-shadow: 1px 1px 0px #000000, 3px 3px 0px rgba(255, 255, 255, 0.1);
+}
+
+.custom1-logout-text:hover {
+    color: rgb(140, 140, 140);
+}
+
+.mt-2 {
+    color: white;
+}
+
+/* Media queries untuk responsif */
+@media (max-width: 768px) {
+    .SideNavbar-custom1 {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 70%;
+        height: 100%;
+        transition: all 0.3s ease;
+    }
+
+    .sidebar-link1 {
+        display: block;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .SideNavbar-custom1.active {
+        left: 0;
+    }
+
+    /* Aturan CSS untuk tombol toggle sidebar */
+    .sidebar-toggle-button {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 1001;
+        /* Pastikan tombol muncul di atas sidebar */
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 8px;
+    }
+
+    .sidebar-toggle-button:focus {
+        outline: none;
+        /* Hapus outline yang muncul saat tombol di-fokus */
+    }
+
+    .sidebar-toggle-icon {
+        color: #ffffff;
+        /* Warna ikon toggle */
+        font-size: 24px;
+        /* Ukuran ikon toggle */
+    }
+}
+
+/* Perubahan untuk responsif saat layar mengecil */
+@media (max-width: 768px) {
+    .sidebar-toggle-button {
+        padding: 6px;
+        /* Sesuaikan padding saat layar mengecil */
+        top: 5px;
+        /* Geser tombol ke atas saat layar mengecil */
+        left: 5px;
+        /* Geser tombol ke kiri saat layar mengecil */
+    }
+
+    .sidebar-toggle-icon {
+        font-size: 20px;
+        /* Ukuran ikon toggle saat layar mengecil */
+    }
+}

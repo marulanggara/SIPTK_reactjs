@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
+
+.card-header h3 {
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;; 
+    text-align: center; 
+    width: 100%; 
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 1px 0px #b6b0b0, 3px 3px 0px rgba(255, 255, 255, 0.1);
+}
+
+.card {
+    margin-top: 20px;
+    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);  
+}
+
+.table td, .table th {
+    text-align: center;
+}

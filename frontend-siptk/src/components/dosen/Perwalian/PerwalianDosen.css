@@ -1,0 +1,14 @@
+.prwln-dsn-box {
+    width: 100%;
+    background-color: #F9F9F9;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    /* Menebalkan border */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    /* Menambahkan shadow */
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 40px;
+}
